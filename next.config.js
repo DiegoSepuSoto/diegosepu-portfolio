@@ -18,7 +18,17 @@ const nextConfig = {
                     },
                 ],
             },
-            // ...
+            {
+                test: /\.(mp3|wav)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                           name: '[name].[ext]',
+                        }
+                    },
+                ],
+            }
         );
         return config;
     }
