@@ -23,7 +23,12 @@ export default function ImageSection() {
             <h1 className="text-3xl text-white font-black">
                 Look at this awesome picture!
             </h1>
-            <Image src={imageURL} alt="Random image" width={400} height={300}></Image>
+            {
+                imageURL && <Image src={imageURL}
+                                   alt="Random image"
+                                   width={400} height={300}
+                />
+            }
         </div>
     )
 }
