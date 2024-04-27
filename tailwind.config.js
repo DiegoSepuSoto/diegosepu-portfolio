@@ -7,8 +7,8 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'bsod': '#010180',
-      'w95-wp': '#008080'
+      bsod: '#010180',
+      'w95-wp': '#008080',
     },
     extend: {
       backgroundImage: {
@@ -19,4 +19,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
